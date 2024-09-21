@@ -92,7 +92,7 @@ def plot_additionals(data_folder):
                 "test": 711.57
             }
         },
-        "UOS-IDS23": {
+        "Web-IDS23": {
             "DNN": {
                 "train": 42.57,
                 "test": 3.1

@@ -307,7 +307,7 @@ def visualize_confusion_matrix(y_true, y_pred, labels, data_folder, dataset_name
     for spine in ax.spines.values():
         spine.set_edgecolor('#707070')
 
-    if dataset_name.startswith('UOS'):
+    if dataset_name.startswith('Web'):
         divider = make_axes_locatable(ax)
         cax = divider.append_axes('right', size='3%', pad=0.1)
         cb = fig.colorbar(mat_ax, cax=cax)
@@ -358,7 +358,7 @@ def visualize_shap_values(explanations, labels, dataset_names, data_folder, logg
         'UNSW-NB15': 'UNSW-NB15',
         'CIC-IDS2017-improved': 'CIC-IDS2017',
         'CSE-CIC-IDS2018-improved': 'CSE-CIC-IDS2018',
-        'UOS-IDS23': 'Web-IDS23',
+        'Web-IDS23': 'Web-IDS23',
     }
 
     for i, dataset_name in enumerate(dataset_names):
@@ -415,7 +415,7 @@ def visualize_init_success(macro_asr, dataset_names, model_names, max_queries, d
         'UNSW-NB15': 'UNSW-NB15',
         'CIC-IDS2017-improved': 'CIC-IDS2017',
         'CSE-CIC-IDS2018-improved': 'CSE-CIC-IDS2018',
-        'UOS-IDS23': 'Web-IDS23',
+        'Web-IDS23': 'Web-IDS23',
     }
     translate_model_names = {
         'DNN': 'MLP',
@@ -501,7 +501,7 @@ def visualize_init_success_pert(macro_asr, dataset_names, model_names, perturbat
         'UNSW-NB15': 'UNSW-NB15',
         'CIC-IDS2017-improved': 'CIC-IDS2017',
         'CSE-CIC-IDS2018-improved': 'CSE-CIC-IDS2018',
-        'UOS-IDS23': 'Web-IDS23',
+        'Web-IDS23': 'Web-IDS23',
     }
     translate_model_names = {
         'DNN': 'MLP',
@@ -631,7 +631,7 @@ def visualize_mape(mape, mape_queries, dataset_names, model_names, attack_names,
         'UNSW-NB15': 'UNSW-NB15',
         'CIC-IDS2017-improved': 'CIC-IDS2017',
         'CSE-CIC-IDS2018-improved': 'CSE-CIC-IDS2018',
-        'UOS-IDS23': 'Web-IDS23',
+        'Web-IDS23': 'Web-IDS23',
     }
     translate_model_names = {
         'DNN': 'MLP',
@@ -821,7 +821,7 @@ def visualize_computational_performance(comp_data, dataset_names, model_names, d
         'UNSW-NB15': 'UNSW-NB15',
         'CIC-IDS2017-improved': 'CIC-IDS2017',
         'CSE-CIC-IDS2018-improved': 'CSE-CIC-IDS2018',
-        'UOS-IDS23': 'Web-IDS23',
+        'Web-IDS23': 'Web-IDS23',
     }
     translate_model_names = {
         'DNN': 'MLP',

@@ -3,7 +3,7 @@ import numpy as np
 from scipy.stats import uniform, loguniform, randint
 from sklearn.preprocessing import MinMaxScaler, QuantileTransformer
 
-from datasets import unsw_nb15, cic_ids2017_improved, cse_cic_ids2018_improved, uos_ids23, BinaryDataset
+from datasets import unsw_nb15, cic_ids2017_improved, cse_cic_ids2018_improved, web_ids23, BinaryDataset
 from models import dnn, cnn, ae, rf, svm, knn
 from attacks import RandomInit, BaselineMin, Pointwise, Boundary, HopSkipJump
 
@@ -12,11 +12,11 @@ datasets = {
     'UNSW-NB15': unsw_nb15,
     'CIC-IDS2017-improved': cic_ids2017_improved,
     'CSE-CIC-IDS2018-improved': cse_cic_ids2018_improved,
-    'UOS-IDS23': uos_ids23,
+    'Web-IDS23': web_ids23,
     'Bin-UNSW-NB15': BinaryDataset('UNSW-NB15'),
     'Bin-CIC-IDS2017-improved': BinaryDataset('CIC-IDS2017-improved'),
     'Bin-CSE-CIC-IDS2018-improved': BinaryDataset('CSE-CIC-IDS2018-improved'),
-    'Bin-UOS-IDS23': BinaryDataset('UOS-IDS23'),
+    'Bin-Web-IDS23': BinaryDataset('Web-IDS23'),
 }
 
 models = {
@@ -167,7 +167,7 @@ features = {
             'lower': False
         },
     },
-    'UOS-IDS23': {
+    'Web-IDS23': {
         'fwd_pkts_tot': {
             'min': 1,
             'max': 1e+10,
@@ -253,9 +253,9 @@ def validate_ids_improved(X_orig, X):
 
     return X
 
-def validate_uos(X_orig, X):
+def validate_web(X_orig, X):
     """
-    Constraints between features for UOS-IDS23
+    Constraints between features for Web-IDS23
     """
 
     # generally equal to ids-improved but with different feature names
@@ -304,7 +304,7 @@ feature_validation = {
     'UNSW-NB15': validate_unsw,
     'CIC-IDS2017-improved': validate_ids_improved,
     'CSE-CIC-IDS2018-improved': validate_ids_improved,
-    'UOS-IDS23': validate_uos
+    'Web-IDS23': validate_web
 }
 
 for dataset_name in list(features):
