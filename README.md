@@ -26,3 +26,7 @@ python main.py <flow-name>
 - `attack-evaluation-minimization`: Evaluates the perturbation minimization
 
 Define the datasets, models and attack types of a run in [parameters.py](parameters.py). The paths to the raw datasets must be defined in the respective loading scripts in [datasets](datasets/). To add new datasets, models or attacks, define them in the respective folder and load them in [parameters.py](parameters.py).
+
+## Classification Report
+
+See [classification-report.md](classification-report.md) for a detailed report on the classification results, including datasets, data processing, classifiers, and selected hyperparameters.
