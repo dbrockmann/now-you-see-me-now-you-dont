@@ -5,10 +5,10 @@
 
 | Dataset | Year | # Samples | Attack Classes | Features |
 |---------|------|-----------|----------------|----------|
-| **[UNSW-NB15]()** | 2015 | 2,540,044 | 9 (large number of attacks grouped into categories, e.g., DoS and Exploits) | 41 (Argus and Bro-IDs: flow‑, direction‑, time‑based metrics) |
-| **[CIC-IDS2017]()** ([improved]()) | 2017 | 2,827,726 | 15 (Variety of attacks such as multiple DoS, brute force, and web exploits) | 82 (CICFlowmeter: bidirectional flow statistics on packets, bytes, timings) |
-| **[CSE-CIC-IDS2018]()** ([improved]()) | 2018 | 64,561,010 | 14 (Similar attack set to CIC-IDS2017, employed on a larger scale) | 82 (CICFlowmeter) |
-| **[WEB-IDS23]()** | 2023 | 12,059,749 | 21 (Comprehensive set of attacks, especially web-based exploits) | 82 (Zeek FlowMeter: similar set to CICFlowMeter) |
+| **UNSW-NB15** | 2015 | 2,540,044 | 9 (large number of attacks grouped into categories, e.g., DoS and Exploits) | 41 (Argus and Bro-IDs: flow‑, direction‑, time‑based metrics) |
+| **CIC-IDS2017** (improved) | 2017 | 2,827,726 | 15 (Variety of attacks such as multiple DoS, brute force, and web exploits) | 82 (CICFlowmeter: bidirectional flow statistics on packets, bytes, timings) |
+| **CSE-CIC-IDS2018** (improved) | 2018 | 64,561,010 | 14 (Similar attack set to CIC-IDS2017, employed on a larger scale) | 82 (CICFlowmeter) |
+| **WEB-IDS23** | 2023 | 12,059,749 | 21 (Comprehensive set of attacks, especially web-based exploits) | 82 (Zeek FlowMeter: similar set to CICFlowMeter) |
 
 ## Data Processing
 
